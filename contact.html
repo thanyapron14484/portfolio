@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ช่องทางการติดต่อ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Mali',cursive;
+}
+
+body{
+background:linear-gradient(135deg,#ffd6ec,#fff4b8);
+min-height:100vh;
+overflow-x:hidden;
+position:relative;
+}
+
+/* ดอกไม้ */
+
+.flower{
+position:fixed;
+color:white;
+font-size:28px;
+opacity:.5;
+animation:float 16s linear infinite;
+z-index:0;
+}
+
+.flower:nth-child(1){left:8%;}
+.flower:nth-child(2){left:28%;animation-duration:18s;}
+.flower:nth-child(3){left:48%;animation-duration:15s;}
+.flower:nth-child(4){left:70%;animation-duration:17s;}
+.flower:nth-child(5){left:90%;animation-duration:20s;}
+
+@keyframes float{
+0%{
+transform:translateY(110vh) rotate(0deg);
+}
+100%{
+transform:translateY(-120px) rotate(360deg);
+}
+}
+
+/* เมนู */
+
+nav{
+padding:20px;
+display:flex;
+justify-content:center;
+gap:30px;
+position:relative;
+z-index:10;
+}
+
+nav a{
+text-decoration:none;
+font-weight:bold;
+color:#444;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff5f99;
+}
+
+/* เนื้อหา */
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:30px 20px;
+position:relative;
+z-index:10;
+}
+
+h1{
+text-align:center;
+color:#444;
+margin-bottom:35px;
+}
+
+.wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,.45);
+backdrop-filter:blur(8px);
+border-radius:25px;
+padding:30px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+color:#ff5f99;
+margin-bottom:20px;
+}
+
+.card p{
+margin:15px 0;
+font-size:17px;
+color:#555;
+}
+
+.card a{
+text-decoration:none;
+color:#555;
+}
+
+.card a:hover{
+color:#ff5f99;
+}
+
+form input,
+form textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:none;
+border-radius:12px;
+font-size:15px;
+outline:none;
+}
+
+form textarea{
+height:120px;
+resize:none;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#ff8fb9;
+color:white;
+cursor:pointer;
+font-size:16px;
+transition:.3s;
+}
+
+button:hover{
+background:#ff6b9f;
+}
+
+.footer{
+margin-top:40px;
+text-align:center;
+color:#555;
+font-size:18px;
+}
+
+@media(max-width:768px){
+
+.wrapper{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="flower">❀</div>
+<div class="flower">✿</div>
+<div class="flower">❁</div>
+<div class="flower">✾</div>
+<div class="flower">❀</div>
+
+<nav>
+
+<a href="index.html">หน้าแรก</a>
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="education.html">ประวัติการศึกษา</a>
+<a href="award.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
+
+</nav>
+
+<div class="container">
+
+<h1>📬 ช่องทางการติดต่อ</h1>
+
+<div class="wrapper">
+
+<!-- ข้อมูลติดต่อ -->
+
+<div class="card">
+
+<h2>ข้อมูลการติดต่อ</h2>
+
+<p>📱 <strong>โทรศัพท์ :</strong> 08X-XXX-XXXX</p>
+
+<p>📧 <strong>Email :</strong>
+<a href="mailto:yourname@email.com">
+yourname@email.com
+</a>
+</p>
+
+<p>📘 <strong>Facebook :</strong>
+<a href="#">
+ชื่อ Facebook ของคุณ
+</a>
+</p>
+
+<p>📷 <strong>Instagram :</strong>
+<a href="#">
+@yourinstagram
+</a>
+</p>
+
+<p>💻 <strong>GitHub :</strong>
+<a href="#">
+github.com/yourusername
+</a>
+</p>
+
+<p>💚 <strong>Line ID :</strong>
+yourlineid
+</p>
+
+<p>
+
+ขอบคุณที่เข้ามาเยี่ยมชมเว็บไซต์ Portfolio ของฉัน
+หากต้องการสอบถามข้อมูลเพิ่มเติม สามารถติดต่อผ่านช่องทางด้านบนได้เลยค่ะ 😊
+
+</p>
+
+</div>
+
+<!-- ฟอร์ม -->
+
+<div class="card">
+
+<h2>ส่งข้อความ</h2>
+
+<form>
+
+<input type="text" placeholder="ชื่อ - นามสกุล">
+
+<input type="email" placeholder="อีเมล">
+
+<input type="text" placeholder="หัวข้อ">
+
+<textarea placeholder="พิมพ์ข้อความ..."></textarea>
+
+<button type="submit">
+ส่งข้อความ
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+🌸 ขอบคุณที่แวะเข้ามาเยี่ยมชม Portfolio ของฉัน 🌸
+
+</div>
+
+</div>
+
+</body>
+</html>
