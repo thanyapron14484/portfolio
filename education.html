@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติการศึกษา</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Mali',cursive;
+}
+
+body{
+background:linear-gradient(135deg,#ffd6ec,#fff4b8);
+min-height:100vh;
+overflow-x:hidden;
+position:relative;
+}
+
+/* ดอกไม้ */
+
+.flower{
+position:fixed;
+color:white;
+font-size:28px;
+opacity:.5;
+animation:float 16s linear infinite;
+z-index:0;
+}
+
+.flower:nth-child(1){left:8%;}
+.flower:nth-child(2){left:28%;animation-duration:18s;}
+.flower:nth-child(3){left:48%;animation-duration:15s;}
+.flower:nth-child(4){left:70%;animation-duration:17s;}
+.flower:nth-child(5){left:90%;animation-duration:20s;}
+
+@keyframes float{
+
+0%{
+transform:translateY(110vh) rotate(0deg);
+}
+
+100%{
+transform:translateY(-120px) rotate(360deg);
+}
+
+}
+
+/* เมนู */
+
+nav{
+padding:20px;
+display:flex;
+justify-content:center;
+gap:30px;
+position:relative;
+z-index:10;
+}
+
+nav a{
+text-decoration:none;
+font-weight:bold;
+color:#444;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff5f99;
+}
+
+/* เนื้อหา */
+
+.container{
+max-width:950px;
+margin:auto;
+padding:30px 20px;
+position:relative;
+z-index:10;
+}
+
+h1{
+text-align:center;
+color:#444;
+margin-bottom:35px;
+}
+
+.card{
+
+background:rgba(255,255,255,.45);
+backdrop-filter:blur(8px);
+border-radius:25px;
+padding:25px;
+margin-bottom:30px;
+display:flex;
+gap:25px;
+align-items:center;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.card img{
+
+width:160px;
+height:160px;
+object-fit:cover;
+border-radius:20px;
+border:4px solid white;
+
+}
+
+.info{
+flex:1;
+}
+
+.info h2{
+color:#ff5f99;
+margin-bottom:10px;
+}
+
+.info p{
+line-height:1.8;
+color:#555;
+}
+
+.footer{
+
+text-align:center;
+margin-top:40px;
+color:#555;
+font-size:18px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="flower">❀</div>
+<div class="flower">✿</div>
+<div class="flower">❁</div>
+<div class="flower">✾</div>
+<div class="flower">❀</div>
+
+<nav>
+
+<a href="index.html">หน้าแรก</a>
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="education.html">ประวัติการศึกษา</a>
+<a href="award.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
+
+</nav>
+
+<div class="container">
+
+<h1>📚 ประวัติการศึกษา</h1>
+
+<!-- ประถม -->
+
+<div class="card">
+
+<img src="images/primary.jpg" alt="โรงเรียนประถม">
+
+<div class="info">
+
+<h2>ระดับประถมศึกษา</h2>
+
+<p><strong>โรงเรียน :</strong> ..........................................</p>
+
+<p><strong>ปีการศึกษา :</strong> พ.ศ. .... - ....</p>
+
+<p><strong>ผลการเรียนเฉลี่ย (GPAX) :</strong> ....</p>
+
+<p>
+
+สำเร็จการศึกษาระดับประถมศึกษา โดยได้รับการพัฒนาทักษะพื้นฐานทั้งด้านวิชาการ คุณธรรม และการทำกิจกรรมร่วมกับผู้อื่น
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ม.ต้น -->
+
+<div class="card">
+
+<img src="images/junior.jpg" alt="โรงเรียนมัธยมต้น">
+
+<div class="info">
+
+<h2>ระดับมัธยมศึกษาตอนต้น</h2>
+
+<p><strong>โรงเรียน :</strong> ..........................................</p>
+
+<p><strong>ปีการศึกษา :</strong> พ.ศ. .... - ....</p>
+
+<p><strong>ผลการเรียนเฉลี่ย (GPAX) :</strong> ....</p>
+
+<p>
+
+ได้เข้าร่วมกิจกรรมของโรงเรียน ฝึกการทำงานเป็นทีม การรับผิดชอบ และพัฒนาทักษะด้านต่าง ๆ ควบคู่กับการเรียน
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ม.ปลาย -->
+
+<div class="card">
+
+<img src="images/highschool.jpg" alt="โรงเรียนมัธยมปลาย">
+
+<div class="info">
+
+<h2>ระดับมัธยมศึกษาตอนปลาย</h2>
+
+<p><strong>โรงเรียน :</strong> ..........................................</p>
+
+<p><strong>แผนการเรียน :</strong> ..........................................</p>
+
+<p><strong>ปีการศึกษา :</strong> พ.ศ. .... - ปัจจุบัน</p>
+
+<p><strong>ผลการเรียนเฉลี่ย (GPAX) :</strong> ....</p>
+
+<p>
+
+ปัจจุบันกำลังศึกษาอยู่ระดับชั้นมัธยมศึกษาปีที่ 6
+มุ่งมั่นพัฒนาความรู้ทางวิชาการ ควบคู่กับการเข้าร่วมกิจกรรม และเตรียมความพร้อมสำหรับการศึกษาต่อในระดับมหาวิทยาลัย
+
+</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+🌸 "การศึกษา คือ รากฐานสำคัญของการพัฒนาตนเองและการก้าวสู่อนาคต"
+
+</div>
+
+</div>
+
+</body>
+</html>
