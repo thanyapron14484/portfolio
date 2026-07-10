@@ -1,32 +1,250 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="th">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio ธันยพร</title>
+<title>Portfolio | Home</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Mali',cursive;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#ffd6ec,#fff4b8);
+    overflow:hidden;
+    position:relative;
+}
+
+/* ดอกไม้ลอย */
+
+.flower{
+    position:absolute;
+    color:white;
+    font-size:28px;
+    opacity:.6;
+    animation:float 12s linear infinite;
+}
+
+.flower:nth-child(1){
+left:10%;
+animation-duration:12s;
+}
+
+.flower:nth-child(2){
+left:25%;
+animation-duration:15s;
+font-size:20px;
+}
+
+.flower:nth-child(3){
+left:45%;
+animation-duration:18s;
+}
+
+.flower:nth-child(4){
+left:65%;
+animation-duration:14s;
+}
+
+.flower:nth-child(5){
+left:82%;
+animation-duration:16s;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(100vh) rotate(0deg);
+}
+
+100%{
+transform:translateY(-120px) rotate(360deg);
+}
+
+}
+
+/* เมนู */
+
+nav{
+
+width:100%;
+padding:20px;
+display:flex;
+justify-content:center;
+gap:30px;
+position:relative;
+z-index:10;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:#444;
+font-weight:bold;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#ff5c9c;
+
+}
+
+/* กล่อง */
+
+.container{
+
+height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+z-index:10;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.45);
+backdrop-filter:blur(8px);
+padding:40px;
+border-radius:25px;
+text-align:center;
+width:380px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+/* รูป */
+
+.profile{
+
+width:220px;
+height:220px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+margin-bottom:20px;
+
+}
+
+h1{
+
+color:#444;
+
+}
+
+h3{
+
+margin-top:10px;
+color:#666;
+
+}
+
+p{
+
+margin-top:15px;
+color:#555;
+line-height:1.8;
+
+}
+
+button{
+
+margin-top:25px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#ff8cb7;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#ff6aa0;
+transform:scale(1.05);
+
+}
+
+</style>
 
 </head>
 
-<body bgcolor=pink>
+<body>
 
-<h1>หน้าหลัก</h1>
-<a href="personal.html">ประวัติส่วนตัว</a>
-<a href="personal.html">ประวัติการศึกษา</a>
-<a href="personal.html">ผลงาน</a>
-<a href="personal.html">ช่องทางการติดต่อ</a>
-<p>นางสาวธันยพร แสงเลิศล้ำ<br>
+<!-- ดอกไม้ -->
 
+<div class="flower">❀</div>
+<div class="flower">✿</div>
+<div class="flower">❁</div>
+<div class="flower">✾</div>
+<div class="flower">❀</div>
 
+<!-- เมนู -->
 
-นักเรียนชั้นมัธยมศึกษาปีที่6/2<br>
+<nav>
 
+<a href="index.html">หน้าแรก</a>
 
+<a href="profile.html">ประวัติส่วนตัว</a>
 
-โรงเรียนพานทอง</p>
+<a href="education.html">ประวัติการศึกษา</a>
 
+<a href="award.html">ผลงาน</a>
 
+<a href="contact.html">ติดต่อ</a>
+
+</nav>
+
+<!-- เนื้อหา -->
+
+<div class="container">
+
+<div class="card">
+
+<img src="images/profile.jpg" class="profile" alt="รูปภาพของฉัน">
+
+<h1>ชื่อ - นามสกุล</h1>
+
+<h3>นักเรียนชั้นมัธยมศึกษาปีที่ 6</h3>
+
+<p>
+
+สวัสดีค่ะ ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio ของฉัน
+
+เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมข้อมูลส่วนตัว
+
+ประวัติการศึกษา ผลงาน และช่องทางการติดต่อ
+
+ขอบคุณที่เข้ามาเยี่ยมชมค่ะ
+
+</p>
+
+<button onclick="location.href='profile.html'">
+
+ดูประวัติส่วนตัว
+
+</button>
+
+</div>
+
+</div>
 
 </body>
-
 </html>
