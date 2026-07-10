@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ผลงานและรางวัล</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Mali',cursive;
+}
+
+body{
+background:linear-gradient(135deg,#ffd6ec,#fff4b8);
+min-height:100vh;
+overflow-x:hidden;
+position:relative;
+}
+
+/* ดอกไม้ */
+
+.flower{
+position:fixed;
+color:white;
+font-size:28px;
+opacity:.5;
+animation:float 16s linear infinite;
+z-index:0;
+}
+
+.flower:nth-child(1){left:8%;}
+.flower:nth-child(2){left:28%;animation-duration:18s;}
+.flower:nth-child(3){left:48%;animation-duration:15s;}
+.flower:nth-child(4){left:70%;animation-duration:17s;}
+.flower:nth-child(5){left:90%;animation-duration:20s;}
+
+@keyframes float{
+0%{
+transform:translateY(110vh) rotate(0deg);
+}
+100%{
+transform:translateY(-120px) rotate(360deg);
+}
+}
+
+/* เมนู */
+
+nav{
+padding:20px;
+display:flex;
+justify-content:center;
+gap:30px;
+position:relative;
+z-index:10;
+}
+
+nav a{
+text-decoration:none;
+font-weight:bold;
+color:#444;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff5f99;
+}
+
+/* เนื้อหา */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:30px;
+position:relative;
+z-index:10;
+}
+
+h1{
+text-align:center;
+margin-bottom:40px;
+color:#444;
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.45);
+backdrop-filter:blur(8px);
+border-radius:25px;
+padding:20px;
+text-align:center;
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card img{
+
+width:100%;
+height:190px;
+object-fit:cover;
+border-radius:18px;
+margin-bottom:15px;
+
+}
+
+.card h2{
+
+color:#ff5f99;
+margin-bottom:10px;
+
+}
+
+.card p{
+
+color:#555;
+line-height:1.7;
+
+}
+
+.year{
+
+margin-top:10px;
+font-weight:bold;
+color:#777;
+
+}
+
+button{
+
+margin-top:18px;
+padding:10px 20px;
+border:none;
+border-radius:30px;
+background:#ff8fb9;
+color:white;
+cursor:pointer;
+font-size:15px;
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#ff6b9f;
+
+}
+
+.footer{
+
+margin-top:45px;
+text-align:center;
+color:#555;
+font-size:18px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="flower">❀</div>
+<div class="flower">✿</div>
+<div class="flower">❁</div>
+<div class="flower">✾</div>
+<div class="flower">❀</div>
+
+<nav>
+
+<a href="index.html">หน้าแรก</a>
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="education.html">ประวัติการศึกษา</a>
+<a href="award.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
+
+</nav>
+
+<div class="container">
+
+<h1>🏆 ผลงานและเกียรติบัตร</h1>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="images/project1.jpg" alt="Project">
+
+<h2>เว็บไซต์ Portfolio</h2>
+
+<p>
+
+ออกแบบและพัฒนาเว็บไซต์ Portfolio ด้วยภาษา HTML และ CSS เพื่อรวบรวมข้อมูลส่วนตัว ประวัติการศึกษา ผลงาน และช่องทางการติดต่อ
+
+</p>
+
+<div class="year">ปี 2569</div>
+
+<button>ดูรายละเอียด</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/certificate1.jpg" alt="Certificate">
+
+<h2>เกียรติบัตรการอบรม</h2>
+
+<p>
+
+ผ่านการอบรมด้านเทคโนโลยีสารสนเทศ การเขียนโปรแกรม หรือการพัฒนาเว็บไซต์ พร้อมได้รับเกียรติบัตรรับรองการเข้าร่วม
+
+</p>
+
+<div class="year">ปี 2568</div>
+
+<button>ดูรายละเอียด</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/activity.jpg" alt="Activity">
+
+<h2>กิจกรรมโรงเรียน</h2>
+
+<p>
+
+เข้าร่วมกิจกรรมของโรงเรียน เช่น งานวิชาการ กิจกรรมจิตอาสา และกิจกรรมพัฒนาผู้เรียน เพื่อเสริมสร้างประสบการณ์และทักษะการทำงานร่วมกับผู้อื่น
+
+</p>
+
+<div class="year">ปี 2568</div>
+
+<button>ดูรายละเอียด</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/project2.jpg" alt="Project">
+
+<h2>โครงงานนักเรียน</h2>
+
+<p>
+
+จัดทำโครงงานหรือชิ้นงานที่เกี่ยวข้องกับรายวิชา โดยฝึกการวางแผน การแก้ปัญหา และการนำเสนอผลงานอย่างเป็นระบบ
+
+</p>
+
+<div class="year">ปี 2569</div>
+
+<button>ดูรายละเอียด</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/competition.jpg" alt="Competition">
+
+<h2>การแข่งขัน</h2>
+
+<p>
+
+เข้าร่วมการแข่งขันทางวิชาการหรือการแข่งขันทักษะต่าง ๆ เพื่อพัฒนาศักยภาพและเพิ่มประสบการณ์ในการเรียนรู้
+
+</p>
+
+<div class="year">ปี 2568</div>
+
+<button>ดูรายละเอียด</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/certificate2.jpg" alt="Certificate">
+
+<h2>ใบประกาศนียบัตร</h2>
+
+<p>
+
+รวบรวมใบประกาศนียบัตรจากการอบรม การเข้าร่วมกิจกรรม และการพัฒนาทักษะในด้านต่าง ๆ
+
+</p>
+
+<div class="year">ปี 2567 - ปัจจุบัน</div>
+
+<button>ดูรายละเอียด</button>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+🌸 ทุกผลงานคือประสบการณ์ที่ช่วยพัฒนาความรู้ ทักษะ และความพร้อมสำหรับการศึกษาต่อในอนาคต 🌸
+
+</div>
+
+</div>
+
+</body>
+</html>
