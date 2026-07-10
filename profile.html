@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติส่วนตัว</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Mali',cursive;
+}
+
+body{
+    background:linear-gradient(135deg,#ffd6ec,#fff4b8);
+    min-height:100vh;
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* ดอกไม้ */
+
+.flower{
+    position:fixed;
+    color:white;
+    font-size:28px;
+    opacity:.5;
+    animation:float 15s linear infinite;
+    z-index:0;
+}
+
+.flower:nth-child(1){left:8%;}
+.flower:nth-child(2){left:25%;animation-duration:18s;}
+.flower:nth-child(3){left:45%;animation-duration:14s;}
+.flower:nth-child(4){left:68%;animation-duration:16s;}
+.flower:nth-child(5){left:88%;animation-duration:20s;}
+
+@keyframes float{
+
+0%{
+transform:translateY(110vh) rotate(0deg);
+}
+
+100%{
+transform:translateY(-120px) rotate(360deg);
+}
+
+}
+
+/* เมนู */
+
+nav{
+
+padding:20px;
+display:flex;
+justify-content:center;
+gap:30px;
+position:relative;
+z-index:10;
+
+}
+
+nav a{
+
+text-decoration:none;
+font-weight:bold;
+color:#444;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#ff5f99;
+
+}
+
+/* กล่อง */
+
+.container{
+
+max-width:900px;
+margin:30px auto;
+padding:20px;
+position:relative;
+z-index:10;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.45);
+backdrop-filter:blur(8px);
+border-radius:25px;
+padding:40px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.profile{
+
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:40px;
+justify-content:center;
+
+}
+
+.profile img{
+
+width:230px;
+height:230px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+
+}
+
+.info{
+
+flex:1;
+min-width:280px;
+
+}
+
+h1{
+
+color:#444;
+margin-bottom:15px;
+
+}
+
+table{
+
+width:100%;
+border-spacing:10px;
+
+}
+
+td{
+
+padding:6px;
+font-size:17px;
+color:#555;
+
+}
+
+.section{
+
+margin-top:35px;
+
+}
+
+.section h2{
+
+color:#ff5f99;
+margin-bottom:15px;
+
+}
+
+.section p{
+
+color:#555;
+line-height:1.8;
+
+}
+
+ul{
+
+padding-left:20px;
+line-height:2;
+color:#555;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flower">❀</div>
+<div class="flower">✿</div>
+<div class="flower">❁</div>
+<div class="flower">✾</div>
+<div class="flower">❀</div>
+
+<nav>
+
+<a href="index.html">หน้าแรก</a>
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="education.html">ประวัติการศึกษา</a>
+<a href="award.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<div class="profile">
+
+<img src="images/profile.jpg" alt="Profile">
+
+<div class="info">
+
+<h1>ชื่อ - นามสกุล</h1>
+
+<table>
+
+<tr>
+<td><strong>ชื่อเล่น</strong></td>
+<td>: __________</td>
+</tr>
+
+<tr>
+<td><strong>วันเกิด</strong></td>
+<td>: __________</td>
+</tr>
+
+<tr>
+<td><strong>อายุ</strong></td>
+<td>: 17-18 ปี</td>
+</tr>
+
+<tr>
+<td><strong>กำลังศึกษา</strong></td>
+<td>: ชั้นมัธยมศึกษาปีที่ 6</td>
+</tr>
+
+<tr>
+<td><strong>โรงเรียน</strong></td>
+<td>: ____________________</td>
+</tr>
+
+<tr>
+<td><strong>แผนการเรียน</strong></td>
+<td>: ____________________</td>
+</tr>
+
+<tr>
+<td><strong>อาชีพที่ใฝ่ฝัน</strong></td>
+<td>: ____________________</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>เกี่ยวกับฉัน</h2>
+
+<p>
+
+สวัสดีค่ะ ดิฉันเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 6
+มีความสนใจในการเรียนรู้สิ่งใหม่ ๆ โดยเฉพาะด้านเทคโนโลยี การออกแบบ และการพัฒนาเว็บไซต์
+เป็นคนรับผิดชอบ ตรงต่อเวลา สามารถทำงานร่วมกับผู้อื่นได้ดี
+ชอบพัฒนาตนเองอยู่เสมอ และมุ่งมั่นในการศึกษาต่อเพื่อสร้างประสบการณ์และต่อยอดความสามารถในอนาคต
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>งานอดิเรก</h2>
+
+<ul>
+
+<li>📖 อ่านหนังสือ</li>
+
+<li>🎵 ฟังเพลง</li>
+
+<li>💻 ศึกษาการเขียนโปรแกรม</li>
+
+<li>🎨 ออกแบบกราฟิก</li>
+
+<li>📷 ถ่ายภาพ</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>ทักษะ (Skills)</h2>
+
+<ul>
+
+<li>HTML เบื้องต้น</li>
+
+<li>CSS เบื้องต้น</li>
+
+<li>Microsoft Word</li>
+
+<li>Microsoft PowerPoint</li>
+
+<li>Canva</li>
+
+<li>การทำงานเป็นทีม</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>คติประจำใจ</h2>
+
+<p>
+
+"ความพยายามอยู่ที่ไหน ความสำเร็จอยู่ที่นั่น"
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
