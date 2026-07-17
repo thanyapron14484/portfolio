@@ -5,327 +5,219 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ประวัติส่วนตัว</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;700&display=swap" rel="stylesheet">
-
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Mali',cursive;
+    font-family:"Prompt",sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#ffd6ec,#fff4b8);
+    background:linear-gradient(135deg,#ffd6e8,#fff0b3);
     min-height:100vh;
     overflow-x:hidden;
     position:relative;
 }
 
-/* ดอกไม้ */
-
+/* ดอกไม้ลอย */
 .flower{
     position:fixed;
     color:white;
-    font-size:28px;
-    opacity:.5;
+    font-size:32px;
+    opacity:0.35;
     animation:float 15s linear infinite;
-    z-index:0;
 }
-
-.flower:nth-child(1){left:8%;}
-.flower:nth-child(2){left:25%;animation-duration:18s;}
-.flower:nth-child(3){left:45%;animation-duration:14s;}
-.flower:nth-child(4){left:68%;animation-duration:16s;}
-.flower:nth-child(5){left:88%;animation-duration:20s;}
 
 @keyframes float{
-
-0%{
-transform:translateY(110vh) rotate(0deg);
+    from{
+        transform:translateY(100vh) rotate(0deg);
+    }
+    to{
+        transform:translateY(-120vh) rotate(360deg);
+    }
 }
-
-100%{
-transform:translateY(-120px) rotate(360deg);
-}
-
-}
-
-/* เมนู */
-
-nav{
-
-padding:20px;
-display:flex;
-justify-content:center;
-gap:30px;
-position:relative;
-z-index:10;
-
-}
-
-nav a{
-
-text-decoration:none;
-font-weight:bold;
-color:#444;
-transition:.3s;
-
-}
-
-nav a:hover{
-
-color:#ff5f99;
-
-}
-
-/* กล่อง */
 
 .container{
-
-max-width:900px;
-margin:30px auto;
-padding:20px;
-position:relative;
-z-index:10;
-
-}
-
-.card{
-
-background:rgba(255,255,255,.45);
-backdrop-filter:blur(8px);
-border-radius:25px;
-padding:40px;
-box-shadow:0 8px 20px rgba(0,0,0,.1);
-
+    max-width:900px;
+    margin:50px auto;
+    background:rgba(255,255,255,.28);
+    backdrop-filter:blur(12px);
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
 
 .profile{
-
-display:flex;
-flex-wrap:wrap;
-align-items:center;
-gap:40px;
-justify-content:center;
-
+    text-align:center;
 }
 
-<img src="images/porlnwza" class="avatar">
-
-<style>
-.avatar {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
-}
-</style>
-
+.profile img{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
-.info{
-
-flex:1;
-min-width:280px;
-
+.profile h1{
+    margin-top:18px;
+    color:#ff5d8f;
 }
 
-h1{
-
-color:#444;
-margin-bottom:15px;
-
-}
-
-table{
-
-width:100%;
-border-spacing:10px;
-
-}
-
-td{
-
-padding:6px;
-font-size:17px;
-color:#555;
-
+.profile h3{
+    color:#777;
+    font-weight:normal;
+    margin-top:5px;
 }
 
 .section{
-
-margin-top:35px;
-
+    margin-top:35px;
 }
 
 .section h2{
-
-color:#ff5f99;
-margin-bottom:15px;
-
+    color:#ff5d8f;
+    margin-bottom:15px;
+    border-left:6px solid #ffb6d5;
+    padding-left:12px;
 }
 
-.section p{
-
-color:#555;
-line-height:1.8;
-
+table{
+    width:100%;
+    border-collapse:collapse;
 }
 
-ul{
-
-padding-left:20px;
-line-height:2;
-color:#555;
-
+td{
+    padding:12px;
+    border-bottom:1px solid rgba(255,255,255,.6);
+    color:#555;
 }
 
+td:first-child{
+    width:35%;
+    font-weight:bold;
+}
+
+.about{
+    line-height:1.8;
+    color:#555;
+}
+
+.back{
+    display:inline-block;
+    margin-top:35px;
+    text-decoration:none;
+    background:white;
+    color:#ff5d8f;
+    padding:12px 30px;
+    border-radius:40px;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.back:hover{
+    background:linear-gradient(90deg,#ffbfd6,#ffe58f);
+    color:white;
+}
 </style>
+
 </head>
 
 <body>
 
-<div class="flower">❀</div>
-<div class="flower">✿</div>
-<div class="flower">❁</div>
-<div class="flower">✾</div>
-<div class="flower">❀</div>
-
-<nav>
-
-<a href="index.html">หน้าแรก</a>
-<a href="profile.html">ประวัติส่วนตัว</a>
-<a href="education.html">ประวัติการศึกษา</a>
-<a href="award.html">ผลงาน</a>
-<a href="contact.html">ติดต่อ</a>
-
-</nav>
+<div class="flower" style="left:8%;animation-duration:15s;">❀</div>
+<div class="flower" style="left:22%;animation-duration:12s;">✿</div>
+<div class="flower" style="left:40%;animation-duration:17s;">❀</div>
+<div class="flower" style="left:60%;animation-duration:13s;">✿</div>
+<div class="flower" style="left:80%;animation-duration:18s;">❀</div>
 
 <div class="container">
 
-<div class="card">
-
 <div class="profile">
+<img src="profile.jpg" alt="Profile">
+<h1>ชื่อ - นามสกุล</h1>
+<h3>นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6</h3>
+</div>
 
-<img src="images/images/1783595574465.jpg" alt="Profile">
-
-<div class="info">
-
-<h1>นางสาวธันยพร แสงเลิศล้ำ</h1>
+<div class="section">
+<h2>🌸 ข้อมูลส่วนตัว</h2>
 
 <table>
-
 <tr>
-<td><strong>ชื่อเล่น</strong></td>
-<td>: ปอ</td>
+<td>ชื่อ-นามสกุล</td>
+<td>นางสาว...............................</td>
 </tr>
 
 <tr>
-<td><strong>วันเกิด</strong></td>
-<td>: 8 มีนาคม 2552</td>
+<td>ชื่อเล่น</td>
+<td>...............................</td>
 </tr>
 
 <tr>
-<td><strong>อายุ</strong></td>
-<td>: 17 ปี</td>
+<td>วันเกิด</td>
+<td>...............................</td>
 </tr>
 
 <tr>
-<td><strong>กำลังศึกษา</strong></td>
-<td>: ชั้นมัธยมศึกษาปีที่ 6</td>
+<td>อายุ</td>
+<td>18 ปี</td>
 </tr>
 
 <tr>
-<td><strong>โรงเรียน</strong></td>
-<td>: พานทอง</td>
+<td>สัญชาติ</td>
+<td>ไทย</td>
 </tr>
 
 <tr>
-<td><strong>แผนการเรียน</strong></td>
-<td>: วิทยาศาสตร์-คณิตรศาสตร์</td>
+<td>ศาสนา</td>
+<td>พุทธ</td>
 </tr>
 
 <tr>
-<td><strong>อาชีพที่ใฝ่ฝัน</strong></td>
-<td>: เภสัชกร</td>
+<td>โรงเรียน</td>
+<td>...............................</td>
 </tr>
 
+<tr>
+<td>แผนการเรียน</td>
+<td>...............................</td>
+</tr>
+
+<tr>
+<td>งานอดิเรก</td>
+<td>ฟังเพลง ดูหนัง อ่านหนังสือ ท่องเที่ยว</td>
+</tr>
+
+<tr>
+<td>ความสามารถพิเศษ</td>
+<td>ใช้โปรแกรม Microsoft Office / Canva / เขียนเว็บไซต์เบื้องต้น</td>
+</tr>
+
+<tr>
+<td>ความใฝ่ฝัน</td>
+<td>ศึกษาต่อในคณะที่สนใจและพัฒนาตนเองอย่างต่อเนื่อง</td>
+</tr>
 </table>
 
 </div>
 
-</div>
-
 <div class="section">
+<h2>💖 แนะนำตัว</h2>
 
-<h2>เกี่ยวกับฉัน</h2>
-
-<p>
-
+<p class="about">
 สวัสดีค่ะ ดิฉันเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 6
-มีความสนใจในการเรียนรู้สิ่งใหม่ ๆ โดยเฉพาะด้านยา และโรคต่างๆ
-เป็นคนรับผิดชอบ ตรงต่อเวลา สามารถทำงานร่วมกับผู้อื่นได้ดี
-ชอบพัฒนาตนเองอยู่เสมอ และมุ่งมั่นในการศึกษาต่อเพื่อสร้างประสบการณ์และต่อยอดความสามารถในอนาคต
-
+เป็นผู้ที่มีความรับผิดชอบ ตั้งใจเรียน มีมนุษยสัมพันธ์ที่ดี
+ชอบเรียนรู้สิ่งใหม่ ๆ และพร้อมพัฒนาตนเองอยู่เสมอ
+สนใจด้านเทคโนโลยี การออกแบบ และการทำงานเป็นทีม
+หวังว่าจะนำความรู้และประสบการณ์ไปต่อยอดในการศึกษาระดับอุดมศึกษาและการทำงานในอนาคต
 </p>
 
 </div>
 
-<div class="section">
-
-<h2>งานอดิเรก</h2>
-
-<ul>
-
-<li>📖 อ่านหนังสือ</li>
-
-<li>🎵 ฟังเพลง</li>
-
-<li>💻 เขียนไดอารี่</li>
-
-<li>🎨 วาดรูป</li>
-
-<li>📷 ถ่ายภาพ</li>
-
-</ul>
-
-</div>
-
-<div class="section">
-
-<h2>ทักษะ (Skills)</h2>
-
-<ul>
-
-
-<li>ภาวะผู้นำ</li>
-
-<li>แก้ไขเฉพาะหน้าได้ดี</li>
-
-<li>เห็นอกเห็นใจผู้อื่น</li>
-
-<li>การทำงานเป็นทีม</li>
-
-</ul>
-
-</div>
-
-<div class="section">
-
-<h2>คติประจำใจ</h2>
-
-<p>
-
-"ชีวิตดีๆ ไม่มีอะไรง่าย ชีวิตง่ายๆ ไม่มีอะไรดี"
-
-</p>
-
-</div>
-
-</div>
+<center>
+<a class="back" href="index.html">🏠 กลับหน้าหลัก</a>
+</center>
 
 </div>
 
